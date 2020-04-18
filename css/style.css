@@ -1,0 +1,163 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2f2f2;
+}
+section {
+  padding: 70px 0;
+}
+section .card-box {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding-left: 25px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+section .card-box:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+section .card-box .card-box-label {
+  width: 20%;
+  background-color: #ebc131;
+  position: relative;
+  margin: -15px 0;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0 0 10px 10px;
+}
+section .card-box .card-box-label::before , section .card-box .card-box-label::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-width: 15px;
+  border-style: solid;
+  z-index: -1;
+}
+section .card-box .card-box-label::before {
+  left: -30px;
+  border-color: transparent #a77627 transparent transparent;
+}
+section .card-box .card-box-label::after {
+  right: -30px;
+  border-color: transparent  transparent transparent #a77627; 
+}
+section .card-box .card-box-label p {
+  margin-bottom: 0;
+}
+section .card-box .card-box-label h1 {
+  font-size: 85px;
+}
+section .card-box .card-box-body {
+  width: 80%;
+  display: flex;
+  padding: 10px 0 10px 20px;
+}
+section .card-box .card-box-body .card-info {
+  width: 80%;
+  border-right: 3px solid #ebc131;
+}
+section .card-box .card-box-body .card-info h4 {
+  color: #ebc131;
+  text-transform: uppercase;
+}
+section .card-box .card-box-body .card-info p {
+  margin-bottom: 0;
+  font-size: .9em;
+}
+section .card-box .card-box-body .card-icon {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .card-box .card-box-body .card-icon .fa-globe {
+  --fa-primary-color: #ebc131;
+  --fa-secondary-color: #ebc131;
+}
+
+/* Stayle Right */
+section .right {
+  flex-direction: row-reverse;
+  padding-right: 25px;
+  padding-left: 0;
+}
+section .right .card-box-body {
+  flex-direction: row-reverse;
+  padding: 10px 20px 10px 0;
+}
+section .right .card-box-body .card-info {
+  border-left: 3px solid #ebc131;
+  border-right: none;
+  padding-left: 10px;
+}
+
+/* Card Two */
+section .two .card-box-label {
+  background-color: #b51788;
+}
+section .two .card-box-label::before {
+  border-color: transparent #68014a transparent transparent;
+}
+section .two .card-box-label::after {
+  border-color: transparent  transparent transparent #68014a; 
+}
+section .two .card-box-body .card-info h4 {
+  color: #b51788;
+}
+section .two .right .card-box-body .card-info {
+  border-left: 3px solid #b51788;
+}
+section .two .card-box-body .card-icon .fa-bullseye-arrow {
+  --fa-primary-color: #b51788;
+  --fa-secondary-color: #b51788;
+}
+
+/* Card three */
+section .three .card-box-label {
+  background-color: #58b3ac;
+}
+section .three .card-box-label::before {
+  border-color: transparent #0e5e51 transparent transparent;
+}
+section .three .card-box-label::after {
+  border-color: transparent  transparent transparent #0e5e51; 
+}
+section .three .card-box-body .card-info h4 {
+  color: #58b3ac;
+}
+section .three .card-box-body .card-info {
+  border-right: 3px solid #58b3ac;
+}
+section .three .card-box-body .card-icon .fa-chart-pie {
+  --fa-primary-color: #58b3ac;
+  --fa-secondary-color: #58b3ac;
+}
+
+/* Card four */
+section .four .card-box-label {
+  background-color: #8bc34a;
+}
+section .four .card-box-label::before {
+  border-color: transparent #33691e transparent transparent;
+}
+section .four .card-box-label::after {
+  border-color: transparent  transparent transparent #33691e; 
+}
+section .four .card-box-body .card-info h4 {
+  color: #8bc34a;
+}
+section .four .card-box-body .card-info {
+  border-left: 3px solid #8bc34a;
+}
+section .four .card-box-body .card-icon .fa-chart-bar {
+  --fa-primary-color: #8bc34a;
+  --fa-secondary-color: #8bc34a;
+}
